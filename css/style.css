@@ -1,0 +1,100 @@
+img {
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+}
+
+/* 전체 기본 설정 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+/* 제목 스타일 */
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #444;
+}
+
+/* 각 섹션 카드처럼 만들기 */
+section {
+    background: #ffffff;
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* 섹션 제목 */
+section h2 {
+    margin-bottom: 10px;
+    color: #ff6b6b;
+}
+
+/* 본문 텍스트 */
+section p {
+    margin-bottom: 15px;
+}
+
+/* 이미지 스타일 */
+section img {
+    width: 100%;
+    max-width: 400px;
+    display: block;
+    margin: 0 auto;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+/* 이미지에 마우스 올리면 살짝 확대 */
+section img:hover {
+    transform: scale(1.05);
+}
+
+/* 반응형 (모바일 대응) */
+@media (max-width: 600px) {
+    body {
+        padding: 10px;
+    }
+
+    section {
+        padding: 15px;
+    }
+}
+
+body {
+    font-family: 'Gowun Dodum', sans-serif;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 48px;
+
+    color: #ffffff;
+
+    /* 연분홍 빛나는 효과 */
+    text-shadow:
+        0 0 5px #ffb6c1,
+        0 0 10px #ffb6c1,
+        0 0 20px #ffc0cb,
+        0 0 30px #ffc0cb;
+
+    background: linear-gradient(135deg, #ffc0cb, #ffd6e0);
+    padding: 15px;
+    border-radius: 20px;
+}
+
+section {
+    border: 2px solid #ffe4ec;
+}
